@@ -1,0 +1,23 @@
+@mixin headline($color) {
+  font-size: $unit * 3;
+  border-bottom: 1px solid black;
+  color: $color;
+  margin: $unit * 2 0;
+}
+@mixin black($color) {
+  background-color: rgba(0, 0, 0, $color);
+}
+
+@mixin white($color) {
+  background-color: rgba(256, 256, 256, $color);
+}
+
+.headline {
+  @include headline(red);
+  @include black(0.5);
+}
+
+.headline-sub {
+  @include headline(blue);
+  border-top: 1px solid green;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font: normal 21px Helvetica, Arial;
+  color: $color-headline;
+}
+
+section {
+  header {
+    border: 2px solid lightblue;
+    h2 {
+      color: green;
+    }
+
+    p {
+      color: blue;
+    }
+  }
+}

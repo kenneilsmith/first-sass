@@ -1,0 +1,24 @@
+// default buttons use a classof .btn
+
+.btn {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 21px;
+  background-color: lightblue;
+
+  &:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+}
+
+.btn-caution {
+  @extend .btn;
+  background-color: yellow;
+}
+
+.btn-danger {
+  @extend .btn;
+  background-color: red;
+}

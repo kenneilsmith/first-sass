@@ -1,0 +1,32 @@
+/* SCSS for all navigation
+Please begin any selector with nav-
+ */
+
+nav.nav-main {
+  background: lightgray;
+  ul {
+    border: 1px solid green;
+    li {
+      border: 1px solid purple;
+      display: inline-block;
+
+      a {
+        color: black;
+        display: block;
+        padding: 40px;
+        text-decoration: none;
+
+        // psuedo selector
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+
+        // anchor with a class of foo
+        &.current {
+          background-color: purple;
+        }
+      }
+    }
+  }
+}
